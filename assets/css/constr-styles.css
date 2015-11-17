@@ -1,3 +1,5 @@
+---
+---
 * {
   transition: .5s;
 }
@@ -10,7 +12,7 @@ body {
   font-family: 'Roboto', Calibri, Helvetica, Arial, sans-serif;
   font-weight: 100;
   background-color: #B1A398;
-  background-image: url("../header-bgpic2.png"); background-repeat: no-repeat; background-position: left top; background-attachment:fixed; background-size:cover;
+  background-image: url("{{ "/assets/img/header-bgpic2.png" | prepend: site.baseurl }}"); background-repeat: no-repeat; background-position: left top; background-attachment:fixed; background-size:cover;
   /*min-width:965px;*/
   text-align: center;
   }
@@ -35,6 +37,7 @@ html {
 #container {
   margin: -60px auto 0;
 }
+
 
       /*** HEADER STYLES ***/
 header img {

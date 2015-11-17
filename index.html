@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <!--
   Authors: Tabitha Kennedy
@@ -16,8 +18,8 @@
 
   <title>codelack.me - under construction</title>
 
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link href="css/constr-styles.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="{{ "/assets/img/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon" />
+  <link rel="stylesheet" href="{{ "/assets/css/constr-styles.css" | prepend: site.baseurl }}" />
     <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -33,7 +35,7 @@
 
 <div id="container">
 <header>
-  <img src="header-logo.png" alt="Tabitha Kennedy logo" width="100" height="100" />
+  <img src="{{ "/assets/img/header-logo.png" | prepend: site.baseurl }}" alt="Tabitha Kennedy logo" width="100" height="100" />
   <div><h1>codelackarts</h1><h4>Tabitha Kennedy</h4></div>
 </header>
 
