@@ -1,0 +1,10 @@
+---
+---
+div#timeline {
+  background-color: black;
+  height: 50px;
+  width: 10px;
+  float: left;
+  position: absolute;
+  left: 10px;
+}

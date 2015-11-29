@@ -3,48 +3,308 @@
 <!DOCTYPE html>
 <!--
   Authors: Tabitha Kennedy
-  Created Date: March 20, 2015
-  Modified Date: March 21, 2015
+  Original Code Created: March 10, 2015
+  Created Date: November 13, 2015
+  Modified Date: November 14, 2015
   Description:
-    Tabitha Kennedy's Portfolio website is currently under construction.
+    Code for a simple portfolio website.
 -->
-
-    <!--[if lt IE 9]><html class="ie"><![endif]-->
-    <!--[if gte IE 9]><!--><html><!--<![endif]-->
+<html lang="en">
 <head>
+  <title>Tabitha Kennedy Portfolio</title>
+  <meta name="description" content="Tabitha Kennedy's (codelack) digital media portfolio website." />
+  <meta name="keywords" content="portfolio, art, digital media, responsive, gallery, Tab, Tabitha Kennedy, codelack, codelackarts, dagrblz, UI design, video" />
+  <meta name="author" content="Tabitha Kennedy" />
+
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-  <title>codelack.me - under construction</title>
-
-  <link rel="shortcut icon" href="{{ "/assets/img/favicon.ico" | prepend: site.baseurl }}" type="image/x-icon" />
-  <link rel="stylesheet" href="{{ "/assets/css/constr-styles.css" | prepend: site.baseurl }}" />
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  <link href='http://fonts.googleapis.com/css?family=Roboto:100,700,100italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700,100' rel='stylesheet' type='text/css'>
-  <style> @import  url(http://fonts.googleapis.com/css?family=Roboto:100,700,100italic,700italic);
+  <link rel="shortcut icon" type="image/x-icon" href="{{ "/assets/img/favicon.ico" | prepend: site.baseurl }}"  />
+  <link rel="stylesheet"  href="{{ "/assets/css/styles.css" | prepend: site.baserul }}"/>
+  <link rel="stylesheet" media="print" href="{{ "/assets/css/print.css"  | prepend: site.baserul }}" />
+  <link rel="stylesheet" href="{{ "/assets/css/homethumbs.css" | prepend: site.baserul }}" />
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,100italic,300italic,400italic,500italic,700italic'>
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto+Slab:700,100'>
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Damion'>
+  <style> @import  url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,100italic,300italic,400italic,500italic,700italic);
           @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700,100);
+          @import url(http://fonts.googleapis.com/css?family=Damion);
   </style>
 </head>
 
-<body lang="en">
 
-
-<div id="container">
+<body>
 <header>
-  <img src="{{ "/assets/img/header-logo.png" | prepend: site.baseurl }}" alt="Tabitha Kennedy logo" width="100" height="100" />
-  <div><h1>codelackarts</h1><h4>Tabitha Kennedy</h4></div>
+  <section>
+    <h1 id="left">
+      <a href="index.html" title="refresh portfolio">Tab Kennedy</a>
+    </h1>
+    <!-- <ul id="right">
+      <a id="filter_all"><li>All Works</li></a>
+      <a id="filter_video"><li>Video &amp; Animation</li></a>
+      <a id="filter_ui"><li>Websites &amp; UI</li></a>
+      <a id="filter_art"><li>Fine Arts</li></a>
+    </ul> -->
+    <span id="nav">
+      <button id="filter_video">Video &amp; Animation</button>
+      <button id="filter_ui">Websites &amp; UI</button>
+      <button id="filter_art">Fine Arts</button>
+      <button id="filter_all">All Works</button>
+    </span>
+  </section>
+  <div style="clear: both"></div>
 </header>
 
-<main>
-  <h1>COMING SOON</h1>
-  <p>codelack.me is currently under construction and will arrive soon.</p>
-</main>
-</div>
 
+
+
+<main id="wrapper">
+<div id="container">
+
+  <section class="resgallery">
+    <div class="gal-container">
+      <ul>
+          <li>
+            <figure class="f_vid">
+              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_vid-comp2-15.png" | prepend: site.baseurl }}" alt="Compositing II">
+                <figcaption>
+                <div class="gal-hover">
+                  <p class="link">Compositing II</p>
+                </div>
+                </figcaption>
+              </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="f_vid">
+              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_vid-tim-15.png" | prepend: site.baseurl }}" alt="Indiana Artisan Tim">
+              <figcaption>
+              <div class="gal-hover">
+                  <p class="link">Indiana Artisan Tim</p>
+              </div>
+              </figcaption>
+            </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="f_vid">
+              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_vid-socialmedia-14.png" | prepend: site.baseurl }}" alt="Social Media Animation">
+              <figcaption>
+              <div class="gal-hover">
+                  <p class="link">Social Media Animation</p>
+              </div>
+              </figcaption>
+            </a>
+            </figure>
+          </li>
+
+          <li>
+            <figure class="f_vid">
+              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_vid-heroes-15.png" | prepend: site.baseurl }}" alt="Hero Videos">
+              <figcaption>
+              <div class="gal-hover">
+                  <p class="link">Hero Videos</p>
+              </div>
+              </figcaption>
+            </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="f_vid">
+              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_vid-wedding-15.png" | prepend: site.baseurl }}" alt="Filmed Weddings">
+              <figcaption>
+              <div class="gal-hover">
+                  <p class="link">Filmed Weddings</p>
+              </div>
+              </figcaption>
+            </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="f_vid">
+              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_vid-grad-15.png" | prepend: site.baseurl }}" alt="Filmed Commencement">
+              <figcaption>
+              <div class="gal-hover">
+                  <p class="link">Filmed Commencement</p>
+              </div>
+              </figcaption>
+            </a>
+            </figure>
+          </li>
+
+          <li>
+            <figure class="f_art">
+              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_art-3dcube-14.png" | prepend: site.baseurl }}" alt="3D Cubes">
+              <figcaption>
+              <div class="gal-hover">
+                  <p class="link">3D Cubes</p>
+              </div>
+              </figcaption>
+            </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="f_ui">
+              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_ui-portfolio-15.png" | prepend: site.baseurl }}" alt="5-page Portfolio">
+              <figcaption>
+              <div class="gal-hover">
+                  <p class="link">5-page Portfolio</p>
+              </div>
+              </figcaption>
+            </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="f_ui">
+              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_ui-dots-15.png" | prepend: site.baseurl }}" alt="DOTS Eebsite">
+              <figcaption>
+              <div class="gal-hover">
+                  <p class="link">DOTS Website</p>
+              </div>
+              </figcaption>
+            </a>
+            </figure>
+          </li>
+
+          <li>
+            <figure class="f_art">
+              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_art-taofao-14.png" | prepend: site.baseurl }}" alt="TAOFAO Drawing">
+              <figcaption>
+              <div class="gal-hover">
+                  <p class="link">TAOFAO Drawing</p>
+              </div>
+              </figcaption>
+            </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="f_ui">
+              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_ui-fui-14-15.png" | prepend: site.baseurl }}" alt="FUI Design">
+              <figcaption>
+              <div class="gal-hover">
+                  <p class="link">FUI Design</p>
+              </div>
+              </figcaption>
+            </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="f_ui">
+              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_ui-bepko-14.png" | prepend: site.baseurl }}" alt="Touchscreen Wayfinder">
+              <figcaption>
+              <div class="gal-hover">
+                  <p class="link">Touchscreen Wayfinder</p>
+              </div>
+              </figcaption>
+            </a>
+            </figure>
+          </li>
+
+          <li>
+            <figure class="f_vid">
+              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_vid-comp1-14.png" | prepend: site.baseurl }}" alt="Compositing I">
+              <figcaption>
+              <div class="gal-hover">
+                  <p class="link">Compositing I</p>
+              </div>
+              </figcaption>
+            </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="f_ui">
+              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_ui-rfk-14.png" | prepend: site.baseurl }}" alt="Radio Free Kokomo Website">
+              <figcaption>
+              <div class="gal-hover">
+                  <p class="link">RFK Website</p>
+              </div>
+              </figcaption>
+            </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="f_vid">
+              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_vid-bts-13.png" | prepend: site.baseurl }}" alt="College Behind the Scenes">
+              <figcaption>
+              <div class="gal-hover">
+                  <p class="link">College BTS</p>
+              </div>
+              </figcaption>
+            </a>
+            </figure>
+          </li>
+
+          <li>
+            <figure class="f_art">
+              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_art-teeth-13.png" | prepend: site.baseurl }}" alt="Jar of Teeth">
+              <figcaption>
+              <div class="gal-hover">
+                  <p class="link">Jar of Teeth</p>
+              </div>
+              </figcaption>
+            </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="f_art">
+              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_art-ashes-12.png" | prepend: site.baseurl }}" alt="Reborn From Ashes">
+              <figcaption>
+              <div class="gal-hover">
+                  <p class="link">Reborn From Ashes</p>
+              </div>
+              </figcaption>
+            </a>
+            </figure>
+          </li>
+          <li>
+            <figure class="f_art">
+              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_art-withthebirds-12.png" | prepend: site.baseurl }}" alt="With the Birds">
+              <figcaption>
+              <div class="gal-hover">
+                  <p class="link">With the Birds</p>
+              </div>
+              </figcaption>
+            </a>
+            </figure>
+          </li>
+      </ul>
+
+    </div>
+  </section>
+
+
+</div>
+</main>
+
+
+<footer>
+  <!-- <div id="left">
+    <p>Portfolio website and contents &copy; 2014-<script>document.write(new Date().getFullYear())</script><noscript>(current year)</noscript> Tabitha Kennedy</p>
+  </div>
+  <div id="right">
+    <ul>
+      <li><a href="/" title="resume or cirriculum vitae">CV</a></li>
+      <li><a href="/" title="PDF version of portfolio">PDF</a></li>
+      <div style="clear: both"></div>
+    </ul>
+  </div> -->
+  <p>
+    <span id="left">
+      <span class="showlarge">Portfolio website and contents &copy; 2014-<script>document.write(new Date().getFullYear())</script><noscript>(current year)</noscript> Tabitha Kennedy</span>
+      <span class="showsmall">&copy; Tabitha Kennedy</span>
+    </span>
+    <span id="right">
+      <a href="{{ site.baseurl }}" title="resume or cirriculum vitae">CV</a>
+      <a href="{{ site.baseurl }}" title="PDF version of portfolio">PDF</a>
+    </span>
+  </p>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="{{ "/assets/js/gallery-filter.js" | prepend: site.baseurl }}"></script>
 
 </body>
 </html>

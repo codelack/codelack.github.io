@@ -1,0 +1,160 @@
+---
+---
+/*
+  Authors: Tabitha Kennedy
+  Originally Created: March 23, 2015
+  Created Date: November 13, 2015
+  Modified Date: November 14, 2015
+  Description:
+    CSS styles for the homepage's responsive gallery thumbnails.
+  Disclaimer:
+    Code written for the responsive gallery was inspired by and based off Peter Finlin's Boxify code.
+*/
+
+/*    Responsive Thumbnail Gallery    */
+
+.resgallery * {
+  box-sizing: border-box;
+  /*overflow-y: hidden;*/
+}
+
+.opacity {
+  filter: opacity(.2);
+    -webkit-filter: opacity(.2);
+} /*THIS IS IMPORTANT FOR THE FILTER BUTTONS TO WORK*/
+
+section.resgallery {
+  background-color: #1C1A1C;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.resgallery ul {
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+}
+.resgallery ul li {
+    float: left;
+    /*min-height: 100%;*/
+    /*height: 100%;*/
+    height: calc(1/6 * 100%);
+    width: calc(1/6 * 100%);
+    background-color: #000;
+    list-style: outside none none;
+    /*margin-top: -5px; /* <--fixes space except for bottom row */
+}
+.resgallery figure {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+.resgallery figure img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(70%);
+      -webkit-filter: grayscale(70%);
+    vertical-align: middle; /* <--somehow fixes both black row spaces */
+}
+.resgallery figcaption { /* <--the colored hover box */
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(76,106,160, 0.80);
+    opacity: 0;
+    overflow-y: hidden;*/
+}
+.resgallery figcaption .gal-hover {
+  position: absolute;
+    top : 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform        : translate(-50%, -50%);
+  opacity: 0;
+}
+main section.resgallery .link {
+  color: #1C1A1C;
+  /*text-shadow: 1px 1px 0px #336;*/
+  text-align: center;
+  /*font-family: 'Roboto Slab', Gerogia, Cambria, sans-serif;*/
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 900;
+  /*text-transform: uppercase;*/
+  letter-spacing: 1px;
+  vertical-align: middle;
+  margin: 0;
+  background-color: #BEE0AD;
+  padding: 4px 8px;
+  border-radius: 3px;
+    -moz-border-radius: 3px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+}
+.resgallery .link:hover, .resgallery .link:focus {
+    color: white;
+    background-color: #66BB66;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.75);
+}
+.resgallery figure:hover figcaption .gal-hover, .resgallery figure:focus figcaption .gal-hover {
+    opacity: 1;
+}
+.resgallery figure:hover {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+.resgallery figure:hover img {
+  filter: grayscale(0%);   /*<-- restated so it doesn't change back when hover */
+    -webkit-filter: grayscale(0%);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.gal-container {
+  margin-right:auto;
+  margin-left:auto;
+  /*padding-left:15px;*/
+  /*padding-right:15px;*/
+}
+.row {
+  margin-left:-15px;
+  margin-right:-15px;
+}
+.gal-container:before,.gal-container:after,.row:before,.row:after {
+content: "";
+display: table;
+}
+.gal-container:after,.row:after {
+  clear:both;
+  /*margin: -5px; /* <--fixes space on bottom row */
+}
+
+
+/*    Responsive Thumbnails   */
+@media screen and (max-width:1300px){
+  .resgallery ul li {width: 25%;}
+}
+@media screen and (max-width:900px){
+  .resgallery ul li {width: calc(1/3 * 100%);}
+}
+@media screen and (max-width:600px){
+.resgallery ul li{width:50%;}
+.resgallery .row {display:inline-block;}
+}
+@media screen and (max-width:400px){
+section.resgallery {box-shadow: none; -webkit-box-shadow: none;}
+.resgallery ul li{width:100%;}
+/*.resgallery ul li{width:100%;height:20vw;min-height:100px;overflow:hidden;float:none;}
+.resgallery img {opacity:0;}
+.resgallery figcaption {opacity:1;}
+main section.resgallery .link {color:white;}
+.resgallery li:nth-child(2n+2) {background-color: rgba(170, 112, 74, 1);}
+.resgallery li:nth-child(2) p {font-size: 22px;}
+.resgallery figcaption .gal-hover {top:50px;}*/
+}
