@@ -2,3 +2,7 @@
 markdown: kramdown
 
 excerpt_separator: <!--more--> 
+
+collections: 
+  works:
+    output: true
