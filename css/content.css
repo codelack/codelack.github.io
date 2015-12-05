@@ -6,6 +6,14 @@
     Individual pages of works/pieces CSS stylesheet for a portfolio website.
 */
 
+/*  --  Header Styles  --   */
+
+#nav a {        /*Content.css should not be included in index.html*/
+  margin: 0;
+}
+
+/*  --  Content Styles -- */
+
 #workcontent {
   margin: 0 auto;
   padding: 15px 60px;

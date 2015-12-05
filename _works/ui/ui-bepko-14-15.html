@@ -5,10 +5,12 @@ dateComplete: 2014-2015
 category: Websites &amp; UI
 role-genre: Planning, Designing
 used-media: Illustrator
-image: i_ui-bepko-14.png
+image: i_ui-bepko-14-15.png
+image-2: i_ui-bepko2-14-15.png
 image-alt: touchscreen wayfinder image
-previous: ui-rfk-14.html
-next: ui-fui-14-15.html
+image-2-alt: touchscreen wayfinder screen route
+previous: ui-fui-14-15.html
+next: ui-dots-15.html
 ---
 
 <section id="workcontent">
@@ -26,5 +28,7 @@ next: ui-fui-14-15.html
     <p>The system includes three basic functionalities: Find People, Find Places, and Accessibility. People can find out more about faculty and staff contact information and office locations, they can interact with a map to find where they would like to go on campus, and they can see where ramps, accessible parking, and the accessibility office are.</p>
     <p>I also created a moving screensaver in After Effects, which plays in a loop until someone touches the screen.</p>
     <p>I worked under the supervision of Ed Ventura and Kathy Kennedy. After the completion of the design, the system was coded by Abby Burkhalter.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RTL1_lsbSCo" frameborder="0" allowfullscreen></iframe>
+    {% if page.image-2 %} <img src="{{ page.image-2 | prepend: "img/works_full/" | prepend: site.baseurl }}" alt="{% if page.image-2-alt %} {{ page.image-2-alt }} {% endif %}" /> {% endif %} <!--Meta Tag-> Work/Piece Image or Video-->
 
   </section>
