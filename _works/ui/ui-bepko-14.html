@@ -1,0 +1,30 @@
+---
+layout: works
+title: Welcome Wayfinder for IU Kokomo
+dateComplete: 2014-2015
+category: Websites &amp; UI
+role-genre: Planning, Designing
+used-media: Illustrator
+image: i_ui-bepko-14.png
+image-alt: touchscreen wayfinder image
+previous: ui-rfk-14.html
+next: ui-fui-14-15.html
+---
+
+<section id="workcontent">
+    <div id="work-header">
+      <h2>{{ page.title }}</h2>
+      <p class="work_caption">{% if page.dateComplete %} {{ page.dateComplete}} {% endif %}
+        {% if page.category %}<br />Category: {{ page.category }} {% endif %}<!--Meta Tag-> Category of Work-->
+        {% if page.role-genre %}<br />Role: {{ page.role-genre }} {% endif %}<!--Meta Tag-> Role or Genre-->
+        {% if page.used-media %}<br />Used: {{ page.used-media }} {% endif %}<!--Meta Tag-> Used or Media-->
+      </p>
+    </div>
+    {% if page.image %} <img src="{{ page.image | prepend: "img/works_full/" | prepend: site.baseurl }}" alt="{% if page.image-alt %} {{ page.image-alt }} {% endif %}" /> {% endif %} <!--Meta Tag-> Work/Piece Image or Video-->
+    <p><a href="/">Download a .ZIP folder of all screen designs</a></p>
+    <p>I planned and designed a touchscreen wayfinder kiosk for IU Kokomo’s Welcome Center as a part of a Gerald L. Bepko internship on IU Kokomo’s web team.</p>
+    <p>The system includes three basic functionalities: Find People, Find Places, and Accessibility. People can find out more about faculty and staff contact information and office locations, they can interact with a map to find where they would like to go on campus, and they can see where ramps, accessible parking, and the accessibility office are.</p>
+    <p>I also created a moving screensaver in After Effects, which plays in a loop until someone touches the screen.</p>
+    <p>I worked under the supervision of Ed Ventura and Kathy Kennedy. After the completion of the design, the system was coded by Abby Burkhalter.</p>
+
+  </section>

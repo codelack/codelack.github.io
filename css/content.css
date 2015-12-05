@@ -1,0 +1,83 @@
+/*
+  Authors: Tabitha Kennedy
+  Created Date: November 29, 2015
+  Modified Date: December 01, 2015
+  Description:
+    Individual pages of works/pieces CSS stylesheet for a portfolio website.
+*/
+
+#workcontent {
+  margin: 0 auto;
+  padding: 15px 60px;
+  background-color: #EEE;
+  max-width: 1300px;
+}
+
+#workcontent a, #workcontent a:link, #workcontent a:visited {
+  /*color: rgb(112, 173, 71);*/
+  color: #1C1A1C;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin: 0;
+  background-color: #BEE0AD;
+  padding: 4px 8px;
+  border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
+}
+#workcontent a:hover, #workcontent a:active {
+  /*color: rgb(95, 95, 112);
+  text-decoration: underline;*/
+  color: white;
+  background-color: #66BB66;
+  box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+#work-header {
+  /*background-color: white;
+  padding: 15px;
+  margin: 0 0 20px 0;*/
+  /*max-width: 900px;*/
+}
+h2 {
+  color: black;
+  font-size: 32px;
+  font-weight: 100;
+  font-style: italic;
+  margin: 0;
+}
+.work_caption {
+  font-size: 12px;
+  color: #333;
+  margin-top: 0; margin-bottom: 20px;
+}
+#workcontent img {
+  max-width: 900px;
+  width: 90vw;
+  height: auto;
+}
+#workcontent p {
+  font-weight: 300;
+}
+
+
+/*    Responsive Thumbnails   */
+@media screen and (max-width:1300px){
+
+}
+@media screen and (max-width:900px){
+  #workcontent {padding: 15px;}
+}
+@media screen and (max-width:600px){
+
+}
+@media screen and (max-width:400px){
+
+}

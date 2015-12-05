@@ -5,37 +5,15 @@
   Authors: Tabitha Kennedy
   Original Code Created: March 10, 2015
   Created Date: November 13, 2015
-  Modified Date: November 14, 2015
+  Modified Date: November 29, 2015
   Description:
     Code for a simple portfolio website.
 -->
 <html lang="en">
 {% include head.html %}
 
-
 <body>
-<header>
-  <section>
-    <h1 id="left">
-      <a href="index.html" title="refresh portfolio">Tab Kennedy</a>
-    </h1>
-    <!-- <ul id="right">
-      <a id="filter_all"><li>All Works</li></a>
-      <a id="filter_video"><li>Video &amp; Animation</li></a>
-      <a id="filter_ui"><li>Websites &amp; UI</li></a>
-      <a id="filter_art"><li>Fine Arts</li></a>
-    </ul> -->
-    <span id="nav">
-      <button id="filter_video">Video &amp; Animation</button>
-      <button id="filter_ui">Websites &amp; UI</button>
-      <button id="filter_art">Fine Arts</button>
-      <button id="filter_all">All Works</button>
-    </span>
-  </section>
-  <div style="clear: both"></div>
-</header>
-
-
+{% include header.html %}
 
 
 <main id="wrapper">
@@ -46,7 +24,7 @@
       <ul>
           <li>
             <figure class="f_vid">
-              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_vid-comp2-15.png" | prepend: site.baseurl }}" alt="Compositing II">
+              <a href="/works/"><img src="img/gallery_thumbs/t_vid-comp2-15.png" alt="Compositing II">
                 <figcaption>
                 <div class="gal-hover">
                   <p class="link">Compositing II</p>
@@ -57,7 +35,7 @@
           </li>
           <li>
             <figure class="f_vid">
-              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_vid-tim-15.png" | prepend: site.baseurl }}" alt="Indiana Artisan Tim">
+              <a href="/works/"><img src="img/gallery_thumbs/t_vid-tim-15.png" alt="Indiana Artisan Tim">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">Indiana Artisan Tim</p>
@@ -68,7 +46,7 @@
           </li>
           <li>
             <figure class="f_vid">
-              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_vid-socialmedia-14.png" | prepend: site.baseurl }}" alt="Social Media Animation">
+              <a href="/works/"><img src="img/gallery_thumbs/t_vid-socialmedia-15.png" alt="Social Media Animation">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">Social Media Animation</p>
@@ -80,7 +58,7 @@
 
           <li>
             <figure class="f_vid">
-              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_vid-heroes-15.png" | prepend: site.baseurl }}" alt="Hero Videos">
+              <a href="/works/"><img src="img/gallery_thumbs/t_vid-heroes-15.png" alt="Hero Videos">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">Hero Videos</p>
@@ -91,7 +69,7 @@
           </li>
           <li>
             <figure class="f_vid">
-              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_vid-wedding-15.png" | prepend: site.baseurl }}" alt="Filmed Weddings">
+              <a href="/works/"><img src="img/gallery_thumbs/t_vid-wedding-15.png" alt="Filmed Weddings">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">Filmed Weddings</p>
@@ -102,7 +80,7 @@
           </li>
           <li>
             <figure class="f_vid">
-              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_vid-grad-15.png" | prepend: site.baseurl }}" alt="Filmed Commencement">
+              <a href="/works/"><img src="img/gallery_thumbs/t_vid-grad-15.png" alt="Filmed Commencement">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">Filmed Commencement</p>
@@ -114,7 +92,7 @@
 
           <li>
             <figure class="f_art">
-              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_art-3dcube-14.png" | prepend: site.baseurl }}" alt="3D Cubes">
+              <a href="/works/"><img src="img/gallery_thumbs/t_art-3dcube-14.png" alt="3D Cubes">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">3D Cubes</p>
@@ -125,7 +103,7 @@
           </li>
           <li>
             <figure class="f_ui">
-              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_ui-portfolio-15.png" | prepend: site.baseurl }}" alt="5-page Portfolio">
+              <a href="/works/"><img src="img/gallery_thumbs/t_ui-portfolio-15.png" alt="5-page Portfolio">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">5-page Portfolio</p>
@@ -136,7 +114,7 @@
           </li>
           <li>
             <figure class="f_ui">
-              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_ui-dots-15.png" | prepend: site.baseurl }}" alt="DOTS Eebsite">
+              <a href="/works/"><img src="img/gallery_thumbs/t_ui-dots-15.png" alt="DOTS Eebsite">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">DOTS Website</p>
@@ -148,7 +126,7 @@
 
           <li>
             <figure class="f_art">
-              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_art-taofao-14.png" | prepend: site.baseurl }}" alt="TAOFAO Drawing">
+              <a href="/works/"><img src="img/gallery_thumbs/t_art-taofao-14.png" alt="TAOFAO Drawing">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">TAOFAO Drawing</p>
@@ -159,7 +137,7 @@
           </li>
           <li>
             <figure class="f_ui">
-              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_ui-fui-14-15.png" | prepend: site.baseurl }}" alt="FUI Design">
+              <a href="/works/"><img src="img/gallery_thumbs/t_ui-fui-14-15.png" alt="FUI Design">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">FUI Design</p>
@@ -170,7 +148,7 @@
           </li>
           <li>
             <figure class="f_ui">
-              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_ui-bepko-14.png" | prepend: site.baseurl }}" alt="Touchscreen Wayfinder">
+              <a href="/works/"><img src="img/gallery_thumbs/t_ui-bepko-14.png" alt="Touchscreen Wayfinder">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">Touchscreen Wayfinder</p>
@@ -182,7 +160,7 @@
 
           <li>
             <figure class="f_vid">
-              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_vid-comp1-14.png" | prepend: site.baseurl }}" alt="Compositing I">
+              <a href="/works/"><img src="img/gallery_thumbs/t_vid-comp1-14.png" alt="Compositing I">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">Compositing I</p>
@@ -193,7 +171,7 @@
           </li>
           <li>
             <figure class="f_ui">
-              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_ui-rfk-14.png" | prepend: site.baseurl }}" alt="Radio Free Kokomo Website">
+              <a href="/works/"><img src="img/gallery_thumbs/t_ui-rfk-14.png" alt="Radio Free Kokomo Website">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">RFK Website</p>
@@ -204,7 +182,7 @@
           </li>
           <li>
             <figure class="f_vid">
-              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_vid-bts-13.png" | prepend: site.baseurl }}" alt="College Behind the Scenes">
+              <a href="/works/"><img src="img/gallery_thumbs/t_vid-bts-13.png" alt="College Behind the Scenes">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">College BTS</p>
@@ -216,7 +194,7 @@
 
           <li>
             <figure class="f_art">
-              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_art-teeth-13.png" | prepend: site.baseurl }}" alt="Jar of Teeth">
+              <a href="/works/"><img src="img/gallery_thumbs/t_art-teeth-13.png" alt="Jar of Teeth">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">Jar of Teeth</p>
@@ -227,7 +205,7 @@
           </li>
           <li>
             <figure class="f_art">
-              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_art-ashes-12.png" | prepend: site.baseurl }}" alt="Reborn From Ashes">
+              <a href="/works/"><img src="img/gallery_thumbs/t_art-ashes-12.png" alt="Reborn From Ashes">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">Reborn From Ashes</p>
@@ -238,7 +216,7 @@
           </li>
           <li>
             <figure class="f_art">
-              <a href="/works/"><img src="{{ "/assets/img/gallery_thumbs/t_art-withthebirds-12.png" | prepend: site.baseurl }}" alt="With the Birds">
+              <a href="/works/"><img src="img/gallery_thumbs/t_art-withthebirds-12.png" alt="With the Birds">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">With the Birds</p>
@@ -251,6 +229,8 @@
 
     </div>
   </section>
+
+
 </div>
 </main>
 
@@ -258,7 +238,7 @@
 {% include footer.html %}
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="{{ "/assets/js/gallery-filter.js" | prepend: site.baseurl }}"></script>
+<script src="css/gallery-filter.js"></script>
 
 </body>
 </html>

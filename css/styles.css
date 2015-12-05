@@ -1,0 +1,255 @@
+/*
+  Authors: Tabitha Kennedy
+  Created Date: March 10, 2015
+  Modified Date: December 01, 2015
+  Description:
+    Main CSS stylesheet for a portfolio website.
+*/
+
+* {
+  transition: 300ms;
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -ms-transition: 300ms;
+    -o-transition: 300ms;
+  }
+body {
+  font-family: 'Roboto', 'Calibri', Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  /*background-color: #1C1A1C;*/
+  background-color: #B1A398;
+  background-image: url("../img/header-bgpic.png"); background-repeat: no-repeat; background-position: left top; background-attachment:fixed; background-size:cover;
+  width:100%; height:100%; margin:0; padding:0px;  overflow-y:auto;
+  }
+hr.grad {
+  border: 0;
+  height: 1px;
+  background-color: #aaa;
+    background-image: -webkit-linear-gradient(left, #aaa, #eee);
+    background-image: -moz-linear-gradient(left, #aaa, #eee);
+    background-image: -ms-linear-gradient(left, #aaa, #eee);
+    background-image: -o-linear-gradient(left, #aaa, #eee);
+  }
+a, img, iframe {
+  border: 0 none;
+  outline: 0;
+  }
+figure {
+    margin: 0;
+  }
+a {
+  text-decoration: none;
+  }
+* a:hover {
+  transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+  }
+*:hover {
+  transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+  }
+strong, b {
+  font-weight: 700;
+}
+.floatleft {
+  float: left;
+  margin-right: 10px;
+}
+.floatright {
+  float: right;
+  margin-left: 10px;
+}
+.subtitle {
+  color: gray;
+  font-size: small;
+}
+
+
+/*        *** TOP ELEMENTS ***        */
+header {
+  background-color: #1C1A1C;
+  color: #EEE;
+  padding: 5px;
+  min-height: 45px;
+  z-index: 9999;
+  border-bottom: 8px solid #F6B581;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 04px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 04px 10px rgba(0, 0, 0, 0.4);
+}
+header h1 {
+  vertical-align: middle;
+  /*font-size: 16px;*/
+  font-weight: 300;
+  font-family: 'Roboto Slab', 'Calibri', Arial, Helvetica, sans-serif;
+}
+header ul a, header #nav button {
+  text-decoration: none;
+  font-size: 9px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 10px;
+  border: 2px solid #F6B581;
+  box-shadow: inset 0 0 0 0 #F6B581;
+    -webkit-box-shadow: inset 0 0 0 0 #F6B581;
+    -moz-box-shadow: inset 0 0 0 0 #F6B581;
+}
+header ul a, header a:link, header a:visited,
+  header #nav button {
+  color: white;
+}
+header ul a:hover, header a:active, header a:focus,
+ header #nav button:hover {
+  color: #1C1A1C;
+  background-color: #F6B581;
+  box-shadow: inset 0 100px 0 0 #F6B581;
+    -webkit-box-shadow: inset 0 100px 0 0 #F6B581;
+    -moz-box-shadow: inset 0 100px 0 0 #F6B581;
+}
+header #nav button:active {
+  box-shadow: inset 0 100px 0 0 #C4A484;
+    -webkit-box-shadow: inset 0 100px 0 0 #C4A484;
+    -moz-box-shadow: inset 0 100px 0 0 #C4A484;
+  /*color: white;*/
+	transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+}
+button.focused {
+  box-shadow: inset 0 100px 0 0 #C4A484;
+    -webkit-box-shadow: inset 0 100px 0 0 #C4A484;
+    -moz-box-shadow: inset 0 100px 0 0 #C4A484;
+}
+header #left {
+  float: left;
+  margin: 4px 15px;
+}
+header #nav {
+  float: right;
+  margin-top: 2px;
+}
+header li {
+  list-style-type: none;
+  display: inline;
+}
+header section {
+  padding: 0px 5px;
+  margin: 0 auto;
+  max-width:1300px;
+}
+header section span#nav a {
+  margin: 0px 10px;
+}
+
+
+/*        *** CONTENT ELEMENTS ***        */
+main {
+  margin: 0 auto; /* <-- this fixes overlap w/header */
+  /*margin-left: 230px; (for main not wrapper)*/
+  /*padding: 5px;*/
+  display: block;
+  position: relative;
+  height: 100%;
+  /*z-index: 9999;*/
+  }
+#container {
+  margin: 0 auto;
+  position: relative;
+  /*z-index: 9999;*/
+  /*width: 1000px;*/
+  width: 100%; max-width: 1500px; /*was 1300px*/
+  }
+    /*    Content Typography Styles   */
+
+    /*    Content Block Elements    */
+
+    /*    Lightbox Code   */
+
+    /*    Contact Info    */
+
+/*        ***FOOTER ELEMENTS***       */
+footer {
+  background-color: #1C1A1C;
+  color: #EEE;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: -20px;
+  padding: 5px;
+  z-index: 9999;
+  border-top: 8px solid #F6B581;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+footer a, footer a:link, footer a:visited {
+  color: #CCC;
+  text-decoration: underline;
+}
+footer a:hover, footer a:active, footer a:focus {
+  color: white;
+}
+footer #left {
+  /*float: left;*/
+  margin-left: 15px;
+}
+footer #right {
+  float: right;
+}
+footer p {
+  padding: 5px;
+}
+footer p span#right a {
+  margin: 0px 10px;
+}
+footer span.showsmall {
+  display: none;
+}
+
+
+/*        ***MEDIA QUERIES***       */
+
+@media screen and (max-width:700px){
+  main h1 {line-height:1em;}
+}
+@media screen and (max-width:400px){
+  .floatleft, .floatright {float:none; margin:0;}
+}
+    /*    Header Fix    */
+@media screen and (max-width:700px){
+  header #left {float:none; margin-top:0; margin-bottom:0;}
+  header #nav {float:none; margin-top:0;}
+  header #nav button {padding:4px; margin:0 auto; border:0;}
+  header {text-align:center;}
+}
+@media screen and (max-width:470px){
+  #nav {display:none;}
+}
+    /*    Contact Fix   */
+
+    /*    Footer Fix    */
+@media screen and (max-width:700px){
+  footer div#right {display:none;}
+  footer div#left {margin-top:2em;}
+}
+@media screen and (max-width:600px){
+  footer {text-align:center;}
+  footer span.showlarge{display:none;}
+  footer span.showsmall{display:inline;}
+  footer #left {margin: 0 15px;}
+  footer #right{float:none;}
+  footer {padding-top:25px; padding-bottom:25px;}
+}
+@media screen and (max-width:480px){
+  footer div#left {line-height:1rem; text-align:center;}
+  footer div#left {margin-top:1.5em;}
+}

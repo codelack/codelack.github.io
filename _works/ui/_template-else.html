@@ -1,0 +1,27 @@
+---
+layout: works
+title: 
+dateComplete: 
+category: Fine Arts
+role-genre: 
+used-media: 
+previous: 
+next: 
+image: 
+image-alt: 
+---
+
+<section id="workcontent">
+    <div id="work-header">
+      <h2>{{ page.title }}</h2>
+      <p class="work_caption">{% if page.dateComplete %} {{ page.dateComplete}} {% endif %}
+        {% if page.category %}<br />Category: {{ page.category }} {% endif %}<!--Meta Tag-> Category of Work-->
+        {% if page.role-genre %}<br />Role: {{ page.role-genre }} {% endif %}<!--Meta Tag-> Role or Genre-->
+        {% if page.used-media %}<br />Used: {{ page.used-media }} {% endif %}<!--Meta Tag-> Used or Media-->
+      </p>
+    </div>
+    {% if page.image %} <img src="{{ page.image | prepend: "img/works_full/" | prepend: site.baseurl }}" alt="{% if page.image-alt %} {{ page.image-alt }} {% endif %}" /> {% endif %} <!--Meta Tag-> Work/Piece Image or Video-->
+    <p>This is an art piece that I painted within Photoshop completely from scratch.</p>
+	<p>I used this piece in my “breadth” portfolio for my AP Drawing class in high school.</p>
+
+  </section>
