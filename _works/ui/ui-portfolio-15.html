@@ -1,0 +1,29 @@
+---
+layout: works
+title: Personal 5-page portfolio
+dateComplete: 2015
+category: Websites &amp; UI
+role-genre: Designing, Coding
+used-media: HTML, CSS, Atom
+image: i_ui-portfolio-15.jpg
+image-alt: Personal portfolio homepage image
+previous: ui-dots-15.html
+next: ui-rfk-14.html
+---
+
+<section id="workcontent">
+    <div id="work-header">
+      <h2>{{ page.title }}</h2>
+      <p class="work_caption">{% if page.dateComplete %} {{ page.dateComplete}} {% endif %}
+        {% if page.category %}<br />Category: {{ page.category }} {% endif %}<!--Meta Tag-> Category of Work-->
+        {% if page.role-genre %}<br />Role: {{ page.role-genre }} {% endif %}<!--Meta Tag-> Role or Genre-->
+        {% if page.used-media %}<br />Used: {{ page.used-media }} {% endif %}<!--Meta Tag-> Used or Media-->
+      </p>
+    </div>
+    {% if page.image %} <img src="{{ page.image | prepend: "img/works_full/" | prepend: site.baseurl }}" alt="{% if page.image-alt %} {{ page.image-alt }} {% endif %}" /> {% endif %} <!--Meta Tag-> Work/Piece Image or Video-->
+    <p><a href="http://ui-portfolio-15.codelack.me/index.html" target="_blank">Proceed to this work</a></p>
+    <p>This is a full 5-page website showcasing some personal and class work I have done. It also contains a timeline of “firsts" and a page dedicated to my own fictional stories.</p>
+    <p>This website was coded from scratch for the class “introduction to new media communication" as my final project.</p>
+    <p>I learned many things building this website. It was my first code that includes responsivity to screen/browser width. I pushed my knowledge on CSS, as the whole thing is only coded in HTML and CSS.</p>
+
+  </section>
