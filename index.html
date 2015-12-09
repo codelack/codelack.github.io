@@ -1,3 +1,6 @@
+---
+title: Tab Kennedy Portfolio
+---
 <!DOCTYPE html>
 <!--
   Authors: Tabitha Kennedy
@@ -8,42 +11,10 @@
     Code for a simple portfolio website.
 -->
 <html lang="en">
-<head>
-  <title>Tab Kennedy Portfolio</title>
-  <meta name="description" content="Tabitha Kennedy's (codelack) digital media portfolio website." />
-  <meta name="keywords" content="portfolio, art, digital media, responsive, gallery, Tab, Tabitha Kennedy, codelack, codelackarts, dagrblz, UI design, video" />
-  <meta name="author" content="Tabitha Kennedy" />
-
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <link href="/css/styles.css" rel="stylesheet" type="text/css" />
-  <link href="/css/homethumbs.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,100italic,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:700,100' rel='stylesheet' type='text/css'>
-  <style> @import  url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,100italic,300italic,400italic,500italic,700italic);
-          @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:700,100);
-  </style>
-</head>
+{% include head.html %}
 
 <body>
-<header>
-  <section>
-    <h1 id="left">
-      <a href="/index.html" title="Refresh portfolio">Tab Kennedy</a>
-    </h1>
-    <span id="nav">
-      <button id="filter_video" title="Filter video and animation works">Video &amp; Animation</button>
-      <button id="filter_ui" title="Filter website and user interface works">Websites &amp; UI</button>
-      <button id="filter_art" title="Filter fine art works">Fine Arts</button>
-      <button id="filter_all" title="Show all works">All Works</button>
-    </span>
-  </section>
-  <div style="clear: both"></div>
-</header>
+{% include header.html %}
 
 
 <main id="wrapper">
@@ -54,7 +25,7 @@
       <ul>
           <li>
             <figure class="f_vid">
-              <a href="/works/vid/vid-comp2-15.html"><img src="img/gallery_thumbs/t_vid-comp2-15.png" alt="Compositing II">
+              <a href="{{ "works/vid/vid-comp2-15.html" | prepend: site.baseurl }}"><img src="img/gallery_thumbs/t_vid-comp2-15.png" alt="Compositing II">
                 <figcaption>
                 <div class="gal-hover">
                   <p class="link">Compositing II</p>
@@ -65,7 +36,7 @@
           </li>
           <li>
             <figure class="f_vid">
-              <a href="/works/vid/vid-tim-15.html"><img src="img/gallery_thumbs/t_vid-tim-15.png" alt="Indiana Artisan Tim">
+              <a href="{{ "works/vid/vid-tim-15.html" | prepend: site.baseurl }}"><img src="img/gallery_thumbs/t_vid-tim-15.png" alt="Indiana Artisan Tim">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">Indiana Artisan Tim</p>
@@ -76,7 +47,7 @@
           </li>
           <li>
             <figure class="f_vid">
-              <a href="/works/vid/vid-socialmedia-15.html"><img src="img/gallery_thumbs/t_vid-socialmedia-15.png" alt="Social Media Animation">
+              <a href="{{ "works/vid/vid-socialmedia-15.html" | prepend: site.baseurl }}"><img src="img/gallery_thumbs/t_vid-socialmedia-15.png" alt="Social Media Animation">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">Social Media Animation</p>
@@ -88,7 +59,7 @@
 
           <li>
             <figure class="f_vid">
-              <a href="/works/vid/vid-heroes-15.html"><img src="img/gallery_thumbs/t_vid-heroes-15.png" alt="Hero Videos">
+              <a href="{{ "works/vid/vid-heroes-15.html" | prepend: site.baseurl }}"><img src="img/gallery_thumbs/t_vid-heroes-15.png" alt="Hero Videos">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">Hero Videos</p>
@@ -99,7 +70,7 @@
           </li>
           <li>
             <figure class="f_vid">
-              <a href="/works/vid/vid-wedding-15.html"><img src="img/gallery_thumbs/t_vid-wedding-15.png" alt="Filmed Weddings">
+              <a href="{{ "works/vid/vid-wedding-15.html" | prepend: site.baseurl }}"><img src="img/gallery_thumbs/t_vid-wedding-15.png" alt="Filmed Weddings">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">Filmed Weddings</p>
@@ -110,7 +81,7 @@
           </li>
           <li>
             <figure class="f_vid">
-              <a href="/works/vid/vid-grad-15.html"><img src="img/gallery_thumbs/t_vid-grad-15.png" alt="Filmed Commencement">
+              <a href="{{ "works/vid/vid-grad-15.html" | prepend: site.baseurl }}"><img src="img/gallery_thumbs/t_vid-grad-15.png" alt="Filmed Commencement">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">Filmed Commencement</p>
@@ -122,7 +93,7 @@
 
           <li>
             <figure class="f_art">
-              <a href="/works/art/art-3dcube-15.html"><img src="img/gallery_thumbs/t_art-3dcube-14.png" alt="3D Cubes">
+              <a href="{{ "works/art/art-3dcube-15.html" | prepend: site.baseurl }}"><img src="img/gallery_thumbs/t_art-3dcube-14.png" alt="3D Cubes">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">3D Cubes</p>
@@ -133,7 +104,7 @@
           </li>
           <li>
             <figure class="f_ui">
-              <a href="/works/ui/ui-portfolio-15.html"><img src="img/gallery_thumbs/t_ui-portfolio-15.png" alt="5-page Portfolio">
+              <a href="{{ "works/ui/ui-portfolio-15.html" | prepend: site.baseurl }}"><img src="img/gallery_thumbs/t_ui-portfolio-15.png" alt="5-page Portfolio">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">5-page Portfolio</p>
@@ -144,7 +115,7 @@
           </li>
           <li>
             <figure class="f_ui">
-              <a href="/works/ui/ui-dots-15.html"><img src="img/gallery_thumbs/t_ui-dots-15.png" alt="DOTS Eebsite">
+              <a href="{{ "works/ui/ui-dots-15.html" | prepend: site.baseurl }}"><img src="img/gallery_thumbs/t_ui-dots-15.png" alt="DOTS Eebsite">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">DOTS Website</p>
@@ -156,7 +127,7 @@
 
           <li>
             <figure class="f_art">
-              <a href="/works/art/art-taofao-15.html"><img src="img/gallery_thumbs/t_art-taofao-14.png" alt="TAOFAO Drawing">
+              <a href="{{ "works/art/art-taofao-15.html" | prepend: site.baseurl }}"><img src="img/gallery_thumbs/t_art-taofao-14.png" alt="TAOFAO Drawing">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">TAOFAO Drawing</p>
@@ -166,7 +137,7 @@
             </figure>
           </li>
             <figure class="f_ui">
-              <a href="/works/ui/ui-bepko-14-15.html"><img src="img/gallery_thumbs/t_ui-bepko-14-15.png" alt="Touchscreen Wayfinder">
+              <a href="{{ "works/ui/ui-bepko-14-15.html" | prepend: site.baseurl }}"><img src="img/gallery_thumbs/t_ui-bepko-14-15.png" alt="Touchscreen Wayfinder">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">Touchscreen Wayfinder</p>
@@ -177,7 +148,7 @@
           </li>
           <li>
             <figure class="f_ui">
-              <a href="/works/ui/ui-fui-14-15.html"><img src="img/gallery_thumbs/t_ui-fui-14-15.png" alt="FUI Design">
+              <a href="{{ "works/ui/ui-fui-14-15.html" | prepend: site.baseurl }}"><img src="img/gallery_thumbs/t_ui-fui-14-15.png" alt="FUI Design">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">FUI Design</p>
@@ -190,7 +161,7 @@
 
           <li>
             <figure class="f_vid">
-              <a href="/works/vid/vid-comp1-14.html"><img src="img/gallery_thumbs/t_vid-comp1-14.png" alt="Compositing I">
+              <a href="{{ "works/vid/vid-comp1-14.html" | prepend: site.baseurl }}"><img src="img/gallery_thumbs/t_vid-comp1-14.png" alt="Compositing I">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">Compositing I</p>
@@ -201,7 +172,7 @@
           </li>
           <li>
             <figure class="f_ui">
-              <a href="/works/ui/ui-rfk-14.html"><img src="img/gallery_thumbs/t_ui-rfk-14.png" alt="Radio Free Kokomo Website">
+              <a href="{{ "works/ui/ui-rfk-14.html" | prepend: site.baseurl }}"><img src="img/gallery_thumbs/t_ui-rfk-14.png" alt="Radio Free Kokomo Website">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">RFK Website</p>
@@ -212,7 +183,7 @@
           </li>
           <li>
             <figure class="f_vid">
-              <a href="/works/vid/vid-bts-13.html"><img src="img/gallery_thumbs/t_vid-bts-13.png" alt="College Behind the Scenes">
+              <a href="{{ "works/vid/vid-bts-13.html" | prepend: site.baseurl }}"><img src="img/gallery_thumbs/t_vid-bts-13.png" alt="College Behind the Scenes">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">College BTS</p>
@@ -223,7 +194,7 @@
           </li>
           <li>
             <figure class="f_art">
-              <a href="/works/art/art-teeth-13.html"><img src="img/gallery_thumbs/t_art-teeth-13.png" alt="Jar of Teeth">
+              <a href="{{ "works/art/art-teeth-13.html" | prepend: site.baseurl }}"><img src="img/gallery_thumbs/t_art-teeth-13.png" alt="Jar of Teeth">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">Jar of Teeth</p>
@@ -234,7 +205,7 @@
           </li>
           <li>
             <figure class="f_art">
-              <a href="/works/art/art-ashes-12.html"><img src="img/gallery_thumbs/t_art-ashes-12.png" alt="Reborn From Ashes">
+              <a href="{{ "works/art/art-ashes-12.html" | prepend: site.baseurl }}"><img src="img/gallery_thumbs/t_art-ashes-12.png" alt="Reborn From Ashes">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">Reborn From Ashes</p>
@@ -245,7 +216,7 @@
           </li>
           <li>
             <figure class="f_art">
-              <a href="/works/art/art-withthebirds-12.html"><img src="img/gallery_thumbs/t_art-withthebirds-12.png" alt="With the Birds">
+              <a href="{{ "works/art/art-withthebirds-12.html" | prepend: site.baseurl }}"><img src="img/gallery_thumbs/t_art-withthebirds-12.png" alt="With the Birds">
               <figcaption>
               <div class="gal-hover">
                   <p class="link">With the Birds</p>
@@ -264,20 +235,7 @@
 </main>
 
 
-<footer>
-
-  <p>
-    <span id="left">
-      <span class="showlarge">Portfolio website and contents &copy; 2014-<script>document.write(new Date().getFullYear())</script><noscript>(current year)</noscript> Tabitha Kennedy</span>
-      <span class="showsmall">&copy; Tabitha Kennedy</span>
-    </span>
-    <span id="right">
-      <a href="assets/Tab_Kennedy_CV.pdf" title="resume or cirriculum vitae">CV</a>
-      <a href="assets/Tab_Kennedy_Portfolio.pdf" title="PDF version of portfolio">PDF</a>
-    </span>
-  </p>
-
-</footer>
+{% include footer.html %}
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="css/gallery-filter.js"></script>
