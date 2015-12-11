@@ -250,5 +250,6 @@ footer span.showsmall {
   footer {padding-top:25px; padding-bottom:25px;}
 }
 @media screen and (max-width:480px){
-  footer div#left {display:block; line-height:1rem; text-align:center; margin-top:1.5em;}
+  footer #left {line-height:1rem; text-align:center; margin-top:1.5em;}
+  footer #right {display:block;}
 }

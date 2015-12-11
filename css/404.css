@@ -1,0 +1,47 @@
+/*
+  Authors: Tabitha Kennedy
+  Created Date: March 20, 2015
+  Modified Date: December 10, 2015
+  Description:
+    404 CSS stylesheet for a portfolio website.
+*/
+
+div#container {
+  text-align: center; margin: 30vh auto 0;
+}
+main h1 {
+  font-family: 'Roboto Slab', Georgia, serif;
+  color: #4C6AA0;
+  font-weight: 100;
+  font-size: 5.5rem;
+  letter-spacing: -.3rem;
+  line-height: 4rem;
+  text-shadow:  1px 1px 0 rgba(185, 200, 235, .5),
+                -1px -1px 1px rgba(0, 0, 0, .5),
+                -1px -10px 10px rgba(0, 0, 0, .3);
+}
+main p {
+  font-weight: 100;
+  font-size: 24px;
+  color: #333;
+  line-height: 1rem;
+}
+
+/*** MEDIA QUERIES ***/
+@media only screen and (min-width : 0px) and (max-width : 400px) {
+  main h1 {
+    font-size: 3rem;
+    text-shadow: none;
+  }
+  main p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5rem;
+    padding: 0 15px;
+  }
+}
+@media only screen and (min-height: 0px) and (max-height: 640px) {
+  #container {
+    margin: 0 auto;
+  }
+}
