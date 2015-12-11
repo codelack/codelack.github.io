@@ -231,9 +231,9 @@ footer span.showsmall {
   header #nav button {padding:4px; margin:0 auto; border:0;}
   header {text-align:center;}
 }
-@media screen and (max-width:470px){
+/*@media screen and (max-width:470px){
   #nav {display:none;}
-}
+}*/   /* THIS HAS BEEN MOVED TO "homethumbs.css" */
     /*    Contact Fix   */
 
     /*    Footer Fix    */

@@ -65,6 +65,8 @@ section.resgallery {
     -o-transform:      translate(-50%, -50%);
     transform:         translate(-50%, -50%);
   opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
 }
 main section.resgallery .link {
   color: #1C1A1C;
@@ -93,6 +95,8 @@ main section.resgallery .link {
 }
 .resgallery figure:hover figcaption .gal-hover, .resgallery figure:focus figcaption .gal-hover {
     opacity: 1;
+      -webkit-opacity: 1;
+      -moz-opacity: 1;
 }
 .resgallery figure:hover {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.6);
@@ -136,7 +140,11 @@ main section.resgallery .link {
 @media screen and (max-width:600px){
   .resgallery ul li{width:50%;}
 }
+@media screen and (max-width:470px){
+  #nav {display:none;}
+}   /*THIS WAS MOVED FROM "styles.css" SO IT DOESN'T INTERFERE WITH CONTENT PAGES */
 @media screen and (max-width:400px){
-section.resgallery {box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none;}
+  section.resgallery {box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none;}
   .resgallery ul li{width:100%;}
+  .resgallery figcaption .gal-hover {opacity:1;  -webkit-opacity:1;  -moz-opacity:1;}
 }
