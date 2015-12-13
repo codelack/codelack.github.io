@@ -75,17 +75,23 @@ h2 {
   font-weight: 300;
 }
 
+.embedplayer iframe {
+  width: 818px;
+  height: 460px;
+}
+
 
 /*    Responsive Thumbnails   */
 @media screen and (max-width:1300px){
-  #workcontent iframe .demoreel {max-width: 90vw; height: auto;}
+
 }
 @media screen and (max-width:900px){
   #workcontent {padding: 15px;}
+  .embedplayer iframe {width:560px; height:315px;}
 }
 @media screen and (max-width:600px){
-  #workcontent iframe {max-width: 90vw; height:auto;}
+  .embedplayer iframe {width:320px; height:180px;}
 }
 @media screen and (max-width:400px){
-
+  .embedplayer iframe {max-width:90vw; height:auto;}
 }
