@@ -78,7 +78,7 @@ h2 {
 
 /*    Responsive Thumbnails   */
 @media screen and (max-width:1300px){
-
+  #workcontent iframe .demoreel {max-width: 90vw; height: auto;}
 }
 @media screen and (max-width:900px){
   #workcontent {padding: 15px;}
