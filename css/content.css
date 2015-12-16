@@ -19,6 +19,7 @@
   padding: 85px 60px;
   background-color: #EEE;
   max-width: 1300px;
+  height: 100vh;
 }
 
 #workcontent p a, #workcontent p a:link, #workcontent p a:visited {
