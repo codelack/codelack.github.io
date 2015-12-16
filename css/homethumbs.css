@@ -155,7 +155,7 @@ main section.resgallery .link {
 }
 @media screen and (min-height:847px) and (min-width:1300px){
   footer {
-    padding: 5px 50px 50vh;
+    padding: 5px 50px calc(100vh - 819px);
     /*position:inherit;*/
     /*left:inherit;*/
     /*bottom:inherit;*/
