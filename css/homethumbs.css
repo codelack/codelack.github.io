@@ -131,7 +131,7 @@ main section.resgallery .link {
 
 
 /*    Responsive Thumbnails   */
-@media screen and (max-width:1500px){
+@media screen and (max-width:1650px){
   .resgallery ul li {width: 25%;}
 }
 @media screen and (max-width:900px){
