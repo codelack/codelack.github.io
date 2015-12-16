@@ -131,7 +131,7 @@ main section.resgallery .link {
 
 
 /*    Responsive Thumbnails   */
-@media screen and (max-width:1300px){
+@media screen and (max-width:1500px){
   .resgallery ul li {width: 25%;}
 }
 @media screen and (max-width:900px){
@@ -155,7 +155,7 @@ main section.resgallery .link {
 }
 @media screen and (min-height:847px) and (min-width:1301px){
   footer {
-    padding: 5px 50px calc(100vh - 770px);
+    /*padding: 5px 50px calc(100vh - 770px);*/
     /*position:inherit;*/
     /*left:inherit;*/
     /*bottom:inherit;*/
