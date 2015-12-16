@@ -155,7 +155,7 @@ main section.resgallery .link {
 }
 @media screen and (min-height:847px) and (min-width:1300px){
   footer {
-    padding: 5px 50px 20vh;
+    /*padding: 5px 50px 20vh;*/
     /*position:inherit;*/
     /*left:inherit;*/
     /*bottom:inherit;*/
@@ -163,7 +163,7 @@ main section.resgallery .link {
     /*width:inherit;*/
   }
 }
-@media screen and (min-height:1000px) and (min-width:1400px){
+/*@media screen and (min-height:1000px) and (min-width:1400px){
   footer {
     padding: 5px 50px 30vh;
   }
@@ -177,7 +177,7 @@ main section.resgallery .link {
   footer {
     padding: 5px 50px 50vh;
   }
-}
+}*/
 /*@media screen and (min-height:882px) and (min-width:1450px){
   footer {padding: 5px 50px 12.5vh;}
 }*/
