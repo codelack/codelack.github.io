@@ -16,10 +16,11 @@
 
 #workcontent {
   margin: 0 auto;
-  padding: 85px 60px;
+  padding: 15px 60px;
   background-color: #EEE;
   max-width: 1300px;
   height: 100%;
+  padding-bottom: 70px;
 }
 
 #workcontent p a, #workcontent p a:link, #workcontent p a:visited {
@@ -103,13 +104,13 @@ footer {
   .embedplayer iframe {max-width:90vw; height:auto;}
 }
 /*  Fixes blank space at bottom for short content pages   */
-@media screen and (min-height:435px){
-  #container section {
+/*@media screen and (min-height:435px){
+  #container {
     min-height: 77vh;
   }
 }
 @media screen and (min-height:675px){
-  #container section {
+  #container {
     min-height: 85vh;
   }
-}
+}*/
