@@ -1,7 +1,7 @@
 /*
   Authors: Tabitha Kennedy
   Created Date: November 29, 2015
-  Modified Date: December 01, 2015
+  Modified Date: December 15, 2015
   Description:
     Individual pages of works/pieces CSS stylesheet for a portfolio website.
 */
@@ -80,10 +80,6 @@ h2 {
   height: 460px;
 }
 
-#container section {
-  min-height: 80vh;
-} /*Fixes blank space at bottom for short content pages*/
-
 
 /*    Responsive Thumbnails   */
 @media screen and (max-width:1300px){
@@ -98,4 +94,15 @@ h2 {
 }
 @media screen and (max-width:400px){
   .embedplayer iframe {max-width:90vw; height:auto;}
+}
+/*  Fixes blank space at bottom for short content pages   */
+@media screen and (min-height:435px){
+  #container section {
+    min-height: 77vh;
+  }
+}
+@media screen and (min-height:675px){
+  #container section {
+    min-height: 85vh;
+  }
 }
