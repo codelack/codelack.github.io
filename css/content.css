@@ -98,12 +98,12 @@ h2 {
 }
 /*  Fixes blank space at bottom for short content pages   */
 @media screen and (min-height:435px){
-  #container section {
+  #container {
     min-height: 77vh;
   }
 }
 @media screen and (min-height:675px){
-  #container section {
+  #container {
     min-height: 85vh;
   }
 }
