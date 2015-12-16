@@ -16,10 +16,10 @@
 
 #workcontent {
   margin: 0 auto;
-  padding: 85px 60px;
+  padding: 15px 60px;
   background-color: #EEE;
   max-width: 1300px;
-  height: 100vh;
+  min-height: 90vh;
 }
 
 #workcontent p a, #workcontent p a:link, #workcontent p a:visited {
