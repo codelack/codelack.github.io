@@ -80,6 +80,10 @@ h2 {
   height: 460px;
 }
 
+#container section {
+  min-height: 80vh;
+} /*Fixes blank space at bottom for short content pages*/
+
 
 /*    Responsive Thumbnails   */
 @media screen and (max-width:1300px){
