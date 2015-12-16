@@ -19,6 +19,8 @@
   padding: 15px 60px;
   background-color: #EEE;
   max-width: 1300px;
+}
+#workcontent section {
   min-height: 90vh;
 }
 
@@ -97,7 +99,7 @@ h2 {
   .embedplayer iframe {max-width:90vw; height:auto;}
 }
 /*  Fixes blank space at bottom for short content pages   */
-@media screen and (min-height:435px){
+/*@media screen and (min-height:435px){
   #container {
     min-height: 77vh;
   }
@@ -106,4 +108,4 @@ h2 {
   #container {
     min-height: 85vh;
   }
-}
+}*/
