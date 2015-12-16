@@ -14,12 +14,14 @@
 
 /*  --  Content Styles -- */
 
+
 #workcontent {
   margin: 0 auto;
   padding: 15px 60px;
   background-color: #EEE;
   max-width: 1300px;
-  height: 100%;
+  /*min-height: auto;*/
+  min-height: 100vh;
   padding-bottom: 70px;
 }
 
