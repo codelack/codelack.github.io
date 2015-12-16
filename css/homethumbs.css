@@ -148,3 +148,11 @@ main section.resgallery .link {
   .resgallery ul li{width:100%;}
   .resgallery figcaption .gal-hover {opacity:1;  -webkit-opacity:1;  -moz-opacity:1;}
 }
+
+/*    Footer space below fix  */
+@media screen and (min-height:900px) and (min-width:1300px){
+  footer {padding: 5px 50px 20vh;}
+}
+@media screen and (min-height:900px) and (min-width:1450px){
+  footer {padding: 5px 50px 12.5vh;}
+}
