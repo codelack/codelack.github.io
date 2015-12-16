@@ -163,17 +163,17 @@ main section.resgallery .link {
     /*width:inherit;*/
   }
 }
-@media screen and (min-height:847px) and (min-width:1400px){
+@media screen and (min-height:1000px) and (min-width:1400px){
   footer {
     padding: 5px 50px 30vh;
   }
 }
-@media screen and (min-height:847px) and (min-width:1500px){
+@media screen and (min-height:1000px) and (min-width:1500px){
   footer {
     padding: 5px 50px 40vh;
   }
 }
-@media screen and (min-height:847px) and (min-width:1600px){
+@media screen and (min-height:1000px) and (min-width:1600px){
   footer {
     padding: 5px 50px 50vh;
   }
