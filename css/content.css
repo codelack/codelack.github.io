@@ -19,7 +19,7 @@
   padding: 85px 60px;
   background-color: #EEE;
   max-width: 1300px;
-  height: 100vh;
+  height: 100%;
 }
 
 #workcontent p a, #workcontent p a:link, #workcontent p a:visited {
@@ -80,7 +80,13 @@ h2 {
   width: 818px;
   height: 460px;
 }
-
+footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:70px;
+  width:100%;
+}
 
 /*    Responsive Thumbnails   */
 @media screen and (max-width:1300px){

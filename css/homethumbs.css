@@ -150,9 +150,18 @@ main section.resgallery .link {
 }
 
 /*    Footer space below fix  */
-@media screen /*and (min-height:847px)*/ and (max-width:1300px){
-  /*footer {padding: 5px 50px 20vh;}*/
-  .gal-container { padding-bottom: 88px;}
+@media screen and (max-width:1300px){
+  /*.gal-container { padding-bottom: 88px;}*/
+}
+@media screen and (min-height:847px) and (min-width:1300px){
+  footer {
+    padding: 5px 50px 50vh;
+    /*position:inherit;*/
+    /*left:inherit;*/
+    /*bottom:inherit;*/
+    /*height:inherit;*/
+    /*width:inherit;*/
+  }
 }
 /*@media screen and (min-height:882px) and (min-width:1450px){
   footer {padding: 5px 50px 12.5vh;}
