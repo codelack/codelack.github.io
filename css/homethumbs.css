@@ -150,9 +150,9 @@ main section.resgallery .link {
 }
 
 /*    Footer space below fix  */
-@media screen and (min-height:882px) and (min-width:1300px){
+/*@media screen and (min-height:847px) and (min-width:1300px){
   footer {padding: 5px 50px 20vh;}
-}
-@media screen and (min-height:882px) and (min-width:1450px){
+}*/
+/*@media screen and (min-height:882px) and (min-width:1450px){
   footer {padding: 5px 50px 12.5vh;}
-}
+}*/
