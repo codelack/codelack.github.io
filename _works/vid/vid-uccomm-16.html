@@ -1,0 +1,34 @@
+---
+layout: works
+title:        Promo Video for IUPUI
+dateComplete: 2016
+category:     Video &amp; Animation
+role-genre:   Writer/Director, Camera, Editor/Animator
+used-media:   Canon Rebel t4i, Premiere Pro, After Effects
+image:
+image-alt:
+previous:     vid-comp2-15.html
+next:         vid-pheronus-16.html
+---
+
+<section id="workcontent">
+    <div id="work-header">
+      <h2>{{ page.title }}</h2>
+      <p class="work_caption">{% if page.dateComplete %} {{ page.dateComplete}} {% endif %}
+        {% if page.category %}<br />Category: {{ page.category }} {% endif %}<!--Meta Tag-> Category of Work-->
+        {% if page.role-genre %}<br />Role: {{ page.role-genre }} {% endif %}<!--Meta Tag-> Role or Genre-->
+        {% if page.used-media %}<br />Used: {{ page.used-media }} {% endif %}<!--Meta Tag-> Used or Media-->
+      </p>
+    </div>
+    {% if page.image %} <img src="{{ page.image | prepend: "img/works_full/" | prepend: site.baseurl }}" alt="{% if page.image-alt %} {{ page.image-alt }} {% endif %}" /> {% endif %} <!--Meta Tag-> Work/Piece Image or Video-->
+    <img src="../../img/placeholder.png" width="560" height="315" />
+    <!--<div class="embedplayer">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/XtzTeY_LGZA" frameborder="0" allowfullscreen></iframe>
+    </div>-->
+    <p>This was my main project while a temp digital media specialist in the Division of Undergraduate Education’s Office of Communications at IUPUI. The Bepko Learning Center wanted a way to promote the new YouTube videos its students were producing, and I came up with this.</p>
+    <p>It is intended for use on the school’s digital signs and is therefore a silent promo.</p> 
+
+
+
+
+  </section>

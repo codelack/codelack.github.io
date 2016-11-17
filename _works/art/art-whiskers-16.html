@@ -1,0 +1,30 @@
+---
+layout: works
+title: Miss Whiskers Becomes Uneasy
+dateComplete: 2015-2016
+category: Fine Arts / Video
+role-genre: Traditional Art / Glitch Art
+used-media: Acrylics, WordPad, Photoshop, Audition, Premiere Pro
+previous: art-rockerheart-15.html
+next: art-data-16.html
+image:
+image-alt:
+---
+
+<section id="workcontent">
+    <div id="work-header">
+      <h2>{{ page.title }}</h2>
+      <p class="work_caption">{% if page.dateComplete %} {{ page.dateComplete}} {% endif %}
+        {% if page.category %}<br />Category: {{ page.category }} {% endif %}<!--Meta Tag-> Category of Work-->
+        {% if page.role-genre %}<br />Genre: {{ page.role-genre }} {% endif %}<!--Meta Tag-> Role or Genre-->
+        {% if page.used-media %}<br />Media: {{ page.used-media }} {% endif %}<!--Meta Tag-> Used or Media-->
+      </p>
+    </div>
+    {% if page.image %} <img src="{{ page.image | prepend: "img/works_full/" | prepend: site.baseurl }}" alt="{% if page.image-alt %} {{ page.image-alt }} {% endif %}" /> {% endif %} <!--Meta Tag-> Work/Piece Image or Video-->
+    <img src="../../img/placeholder.png" width="560" height="315" />
+    <p>This video art is a result of scanning my painting of a fox and databending it several times to create a collection of glitch art, which were stitched together to create a story in video form.  All visuals <i>and</i> audio were derived from the original painting.</p>
+    <p>I exhibited this piece on a loop at IU Kokomo’s art gallery for my fine arts minor exhibit and at the off-campus Union Street gallery in an alumni exhibit.  This piece was also the subject of my presentation poster research, “Making glitches: Databending .RAW files for art and video,” for IU Kokomo’s student research symposium.</p>
+
+
+
+  </section>

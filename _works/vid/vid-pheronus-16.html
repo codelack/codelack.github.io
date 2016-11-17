@@ -1,0 +1,36 @@
+---
+layout: works
+title:        On a Ledge, They Concur
+dateComplete: 2016
+category:     Video &amp; Animation
+role-genre:   Writer/Director, Camera/Cinematographer, Editor, Sound Editor/Composer
+used-media:   Canon Rebel t4i, Canon EFS 24mm, TASCAM DR-40, Adobe Story, Premiere Pro, After Effects, Audition, LMMS
+image:
+image-alt:
+previous:     vid-uccomm-16.html
+next:         vid-bts-13.html
+---
+
+<section id="workcontent">
+    <div id="work-header">
+      <h2>{{ page.title }}</h2>
+      <p class="work_caption">{% if page.dateComplete %} {{ page.dateComplete}} {% endif %}
+        {% if page.category %}<br />Category: {{ page.category }} {% endif %}<!--Meta Tag-> Category of Work-->
+        {% if page.role-genre %}<br />Role: {{ page.role-genre }} {% endif %}<!--Meta Tag-> Role or Genre-->
+        {% if page.used-media %}<br />Used: {{ page.used-media }} {% endif %}<!--Meta Tag-> Used or Media-->
+      </p>
+    </div>
+    {% if page.image %} <img src="{{ page.image | prepend: "img/works_full/" | prepend: site.baseurl }}" alt="{% if page.image-alt %} {{ page.image-alt }} {% endif %}" /> {% endif %} <!--Meta Tag-> Work/Piece Image or Video-->
+    <img src="../../img/placeholder.png" width="560" height="315" />
+    <!--<div class="embedplayer">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/XtzTeY_LGZA" frameborder="0" allowfullscreen></iframe>
+    </div>-->
+    <p>A retired superhero struggles with ignoring normal crimes of everyday urban life after appeasing the villains of New York City.</p>
+    <p>This was my first independently-produced short film made outside of school.  It was co-produced and sound recorded by Tim Kennedy II and stars Jake Beyler and Tierra Sims.</p>
+    <p>This film coincides with my artistic themes of weird, sci-fi, and real-life depictions of superheroes, as well as mental disorders (in this case, depression).</p>
+
+
+
+
+
+  </section>
