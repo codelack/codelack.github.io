@@ -1,14 +1,13 @@
 # Build settings
 markdown: kramdown
 
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "codelack.me" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://codelack.me" # the base hostname & protocol for your site
 
-excerpt_separator: <!--more--> 
 
-collections: 
-  works:
-    output: true
+# collections: 
+#   works:
+#     output: true
 
 # defaults: 
 #   -

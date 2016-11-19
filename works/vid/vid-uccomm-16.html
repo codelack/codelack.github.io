@@ -20,7 +20,7 @@ next:         vid-pheronus-16.html
         {% if page.used-media %}<br />Used: {{ page.used-media }} {% endif %}<!--Meta Tag-> Used or Media-->
       </p>
     </div>
-    {% if page.image %} <img src="{{ page.image | prepend: "img/works_full/" | prepend: site.baseurl }}" alt="{% if page.image-alt %} {{ page.image-alt }} {% endif %}" /> {% endif %} <!--Meta Tag-> Work/Piece Image or Video-->
+    {% if page.image %} <img src="{{ page.image | prepend: "/img/works_full/" | prepend: site.baseurl }}" alt="{% if page.image-alt %} {{ page.image-alt }} {% endif %}" /> {% endif %} <!--Meta Tag-> Work/Piece Image or Video-->
     <img src="../../img/placeholder.png" width="560" height="315" />
     <!--<div class="embedplayer">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/XtzTeY_LGZA" frameborder="0" allowfullscreen></iframe>

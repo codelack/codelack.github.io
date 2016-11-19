@@ -22,7 +22,7 @@ next: ui-dots-15.html
         {% if page.used-media %}<br />Used: {{ page.used-media }} {% endif %}<!--Meta Tag-> Used or Media-->
       </p>
     </div>
-    {% if page.image %} <img src="{{ page.image | prepend: "img/works_full/" | prepend: site.baseurl }}" alt="{% if page.image-alt %} {{ page.image-alt }} {% endif %}" /> {% endif %} <!--Meta Tag-> Work/Piece Image or Video-->
+    {% if page.image %} <img src="{{ page.image | prepend: "/img/works_full/" | prepend: site.baseurl }}" alt="{% if page.image-alt %} {{ page.image-alt }} {% endif %}" /> {% endif %} <!--Meta Tag-> Work/Piece Image or Video-->
     <p>I planned and designed a touchscreen wayfinder kiosk for IU Kokomo’s Welcome Center as a part of a Gerald L. Bepko internship on IU Kokomo’s web team.</p>
     <p>The system includes three basic functionalities: Find People, Find Places, and Accessibility. People can find out more about faculty and staff contact information and office locations, they can interact with a map to find where they would like to go on campus, and they can see where ramps, accessible parking, and the accessibility office are.</p>
     <p>I also created a moving screensaver in After Effects, which plays in a loop until someone touches the screen.</p>
@@ -32,8 +32,8 @@ next: ui-dots-15.html
     </div>
     {% if page.image-2 %}
       <p style="font-weight:700;">Map of page paths:</p>
-      <a href="{{ page.image-2 | prepend: "img/works_full/" | prepend: site.baseurl }}" title="Click for fullview">
-      <img style="width:300px; max-width:90vw;" src="{{ page.image-2 | prepend: "img/works_full/" | prepend: site.baseurl }}" alt="{% if page.image-2-alt %} {{ page.image-2-alt }} {% endif %}" />
+      <a href="{{ page.image-2 | prepend: "/img/works_full/" | prepend: site.baseurl }}" title="Click for fullview">
+      <img style="width:300px; max-width:90vw;" src="{{ page.image-2 | prepend: "/img/works_full/" | prepend: site.baseurl }}" alt="{% if page.image-2-alt %} {{ page.image-2-alt }} {% endif %}" />
       </a>
     {% endif %} <!--Meta Tag-> Work/Piece Image or Video-->
 

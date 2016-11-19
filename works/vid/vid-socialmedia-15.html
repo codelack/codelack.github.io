@@ -12,10 +12,17 @@ next:         vid-tim-15.html
 <section id="workcontent">
     <div id="work-header">
       <h2>{{ page.title }}</h2>
-      <p class="work_caption">{% if page.dateComplete %} {{ page.dateComplete}} {% endif %}
-        {% if page.category %}<br />Category: {{ page.category }} {% endif %}<!--Meta Tag-> Category of Work-->
-        {% if page.role-genre %}<br />Role: {{ page.role-genre }} {% endif %}<!--Meta Tag-> Role or Genre-->
-        {% if page.used-media %}<br />Used: {{ page.used-media }} {% endif %}<!--Meta Tag-> Used or Media-->
+      <p class="work_caption">
+        {% if page.dateComplete %} {{ page.dateComplete}} {% endif %}
+        {% if page.category %}
+          <br />
+          Category: {{ page.category }} {% endif %}<!--Meta Tag-> Category of Work-->
+        {% if page.role-genre %}
+          <br />
+          Role: {{ page.role-genre }} {% endif %}<!--Meta Tag-> Role or Genre-->
+        {% if page.used-media %}
+          <br />
+          Used: {{ page.used-media }} {% endif %}<!--Meta Tag-> Used or Media-->
       </p>
     </div>
     <div class="embedplayer">

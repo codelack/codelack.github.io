@@ -20,7 +20,7 @@ next: ui-portfolio-15.html
         {% if page.used-media %}<br />Used: {{ page.used-media }} {% endif %}<!--Meta Tag-> Used or Media-->
       </p>
     </div>
-    {% if page.image %} <img src="{{ page.image | prepend: "img/works_full/" | prepend: site.baseurl }}" alt="{% if page.image-alt %} {{ page.image-alt }} {% endif %}" /> {% endif %} <!--Meta Tag-> Work/Piece Image or Video-->
+    {% if page.image %} <img src="{{ page.image | prepend: "/img/works_full/" | prepend: site.baseurl }}" alt="{% if page.image-alt %} {{ page.image-alt }} {% endif %}" /> {% endif %} <!--Meta Tag-> Work/Piece Image or Video-->
     <p><a href="http://dots.codelack.me/index.html" target="_blank">Proceed to this work</a></p>
     <p>DOTS, or “Depending on the Situation," represents the graphic design and music I make in my free time. I have made a very simple, small website including some of my “album" covers.</p>
     <p>To proceed coding another website in plain code for a class, I was instructed to show that I could use Dreamweaver first. This is a simple 3-page website I designed and coded for “introduction to new media communication." The majority of this website was coded within one night.</p>
