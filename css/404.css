@@ -21,9 +21,9 @@ main h1 {
                 -1px -10px 10px rgba(0, 0, 0, .3);
 }
 
-nav {
+/*nav {
   display: none;
-}
+}*/
 
 main p {
   font-weight: 100;
