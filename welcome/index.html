@@ -51,10 +51,21 @@
 	color: white;
 	text-decoration: none;
 	}
-    .linktree a:hover li, .linktree a:active li, linktree a:focus li {
-	color:white;
-	text-decoration: none;
+    .linktree a:hover li, .linktree a:focus li {
 	background-color: rgba(0,0,0,.4)
+	}
+    .linktree a:active li {
+	background-color: rgba(0,0,0,.5)
+	}
+    .linkContent p:first-of-type {
+	margin: 0;
+	}
+    .linkContent p:last-of-type {
+	font-weight: 500;
+	margin: 5px 0px 0px;
+	}
+    .linkSingle p {
+	margin: 0;
 	}
   </style>
 </head>
@@ -63,7 +74,7 @@
 <body>
 <header style="padding-top:1.2em; padding-bottom:0em;">
   <section align="center" style="margin-bottom:20px;">
-    <img src="../img/Logo_07-Ball0-Transp-cr128.png" alt="Logo" width="128px" height="128px">
+    <img src="../img/Logo_07-Ball0-Transp-cr600.png" alt="Logo" width="128px" height="128px">
     <!-- wiki blank circle placeholder img https://upload.wikimedia.org/wikipedia/commons/9/96/Button_Icon_White.svg -->
     <h1 style="margin-top:.2em; margin-bottom:.6em;">
       &#64;codelack.art
@@ -82,44 +93,48 @@
       <ul>
           <a href="https://www.instagram.com/codelack.art/" target="_blank">
 	    <li>
-	    	<div class="">
+	    	<div class="linkSingle">
             	    <p>Instagram</p>
 	    	</div>
 	    </li>
           </a>
           <a href="https://www.youtube.com/user/DaGrblz" target="_blank">
             <li>
-	    	<div class="">
+	    	<div class="linkSingle">
             	    <p>YouTube</p>
 	    	</div>
 	    </li>
           </a>
           <a href="https://twitter.com/codelackart" target="_blank">
             <li>
-	    	<div class="">
-            	    <p>Twitter (under construction)</p>
+	    	<div class="linkContent">
+            	    <p>Twitter</p>
+		    <p>(under construction)</p>
 	    	</div>
 	    </li>
           </a>
 
-          <a >
+          <a href="../temp_gallery.html" target="_blank">
             <li>
-	    	<div class="">
-            	    <p>Portfolio (under construction)</p>
+	    	<div class="linkContent">
+            	    <p>Portfolio</p>
+		    <p>(under construction)</p>
 	    	</div>
 	    </li>
           </a>
           <a >
             <li>
-	    	<div class="">
-            	    <p>Pet Portraits (under construction)</p>
+	    	<div class="linkContent">
+            	    <p>Pet Portraits</p>
+		    <p>(coming soon!)</p>
 	    	</div>
 	    </li>
           </a>
           <a >
            <li>
-	    	<div class="">
-            	    <p>Business Inquiries (to be added soon)</p>
+	    	<div class="linkContent">
+            	    <p>Business Inquiries</p>
+		    <p>(coming soon!)</p>
 	    	</div>
 	    </li>
           </a>
