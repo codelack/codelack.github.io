@@ -1,0 +1,54 @@
+/*
+  Authors: Tabitha Kennedy
+  Original Website Code Created: March 10, 2015
+  Portfolio Created Date: November 13, 2015
+  Stylesheet Created Date: July 4, 2021
+  Modified Date: February 8, 2023
+  Description:
+    Main CSS stylesheet for a portfolio website.
+*/
+
+.linktree ul {
+margin:0;
+padding:0;
+}
+
+.linktree li {
+font-size: 12px;
+font-weight: 700;
+color: white;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: 2px;
+background-color: rgba(0,0,0,.8);
+padding: 30px 20px;
+border: 2px solid white;
+margin: 20px;
+list-style: outside none none;
+}
+
+.linktree a li, .linktree a:link li, .linktree a:visited li {
+color: white;
+text-decoration: none;
+}
+
+.linktree a:hover li, .linktree a:focus li {
+background-color: rgba(0,0,0,.4)
+}
+
+.linktree a:active li {
+background-color: rgba(0,0,0,.5)
+}
+
+.linkContent p:first-of-type {
+margin: 0;
+}
+
+.linkContent p:last-of-type {
+font-weight: 300;
+margin: 5px 0px 0px;
+}
+
+.linkSingle p {
+margin: 0;
+}
